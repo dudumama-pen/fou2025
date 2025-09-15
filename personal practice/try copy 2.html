@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Demo</title>
+</head>
+<body>
+  <h1>Form Example</h1>
+
+  <!-- GET 示例：搜索表单 -->
+  <h2>Search (GET Method)</h2>
+  <form action="/search" method="GET">
+    <label for="query">Search:</label>
+    <input type="text" id="query" name="q">
+    <button type="submit">Go</button>
+  </form>
+  <p><small>👉 输入内容后提交，数据会显示在 URL 上。</small></p>
+
+  <hr>
+
+  <!-- POST 示例：注册表单 -->
+  <h2>Register (POST Method)</h2>
+  <form action="/register" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <button type="submit">Register</button>
+  </form>
+  <p><small>👉 提交后数据不会显示在 URL，而是放在请求体里。</small></p>
+</body>
+</html>
