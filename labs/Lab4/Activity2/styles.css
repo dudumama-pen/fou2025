@@ -1,0 +1,15 @@
+p {
+    font-size: 22pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.highlight {background-color: tomato;}
+#special {background-color: lightgrey;
+          font-style: italic;
+          font-weight: bold;
+          border: 2px solid black;
+          padding: 10px 40px 33px 20px;
+          margin: 20px;
+}
+a:hover {color:rgba(332, 22, 133, 12);}
