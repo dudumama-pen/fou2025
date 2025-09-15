@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registeration form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend> personal info group 
+            </legend>
+            <p>
+            <label for="name"> fullname: </label>
+            <input type="text" name="user_name" required> 
+            <br>
+            <br>
+            <label for="mail"> student email: </label>
+            <input type="email" name="user_email" required>
+            <br>
+            <br>
+            <label for="phone"> Tel: </label>
+            <input type="tel" name="user_phone" required>
+            <br>
+            <br>
+        </fieldset>
+     <fieldset>
+            <legend> Course Info Group 
+            </legend>
+            <p>  
+            <label> Course:</label>
+            <select name="Course" required>
+                <option>Web Development</option>
+                <option>Data Science</option>
+                <option>Graphic Design</option>
+            </select>
+            <br>
+            <br>
+        <label>Desired Start Date:</label>
+        <input type="date" name="start_date" required>
+        <br>
+        <br>
+        <label><input type="checkbox"> I require financial aid information</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
