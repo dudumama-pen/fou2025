@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio page of qianwenhou</title>
+</head>
+<body>
+    <header><h1>Portfolio · Qianwen Hou</h1>
+    <nav>
+    <a href="#home">About Me</a>
+    <a href="#project"> Main Projects</a>
+    <a href="#contact"> Contact Me</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>My Career </h2>
+        <p>I'm a Content Creation Specialist and Entry-Level UX Designer/Researcher, focused on creating engaging, user friendly solutions.</p>
+        <article>
+            <h3>Education </h3>
+            <ul>
+                <li>Bachelor of Arts in Editing & Publicizing 
+                   <em>Communication University of Zhejiang</em></li>
+                <li>Master of Human-Computer Interaction (HCI)
+                     <em>Tallinn University, Currently Enrolled</em></li>
+                </li>
+        </article>
+        <article>
+            <h3>Work experience</h3>
+            <ol>
+                <li><strong>Content Creation Specialist</strong> <em>2020-2025</em></li>
+                <p>:Planned and executed international exhibitions and promotional events for
+partners like API, CPHI, PChi, and Hi&Fi.</p>
+                <li><strong>Event Planner</strong> <em>2018-2020</em></li>
+                <p>Developed impactful marketing strategies on global platforms, securing a spot in ICIS
+Chemical Business magazine's "Top 100 Chemical Distributors"</p>
+                <li><strong>Journalist in Lifestyle Section</strong> <em>2015-2017</em></li>
+                <p>Produced engaging articles on travel, food, and culture for a leading local newspaper </p>
+            </ol>
+            </article>
+    </section>
+    <aside id="project">
+     <h2>Main Projects</h2>
+        <p>My work involved in-depth market research to chart the industry's evolution from fragmented growth to global competition, alongside executing successful international partnership initiatives at a large-scale trade exhibition.</p>
+        <article>
+            <h3>The 87th API China Special Report</h3>
+            <p>This report covers the 87th API China exhibition, a major pharmaceutical industry event in Wuhan with over 1,500 exhibitors and 100,000 visitors.</p>
+            <img src="project1.jpg" alt="project1 image" width="350">
+
+            <a href="https://www.echemi.com/special/2021-87th-api-china.html">The 87th API China Special Report</a>
+        </article>
+        <article>
+            <h3>China's Chemical Industry Report</h3>
+            <p>This report analyzes the consolidation and transformation of China’s chemical industry, highlighting its evolution from fragmented growth to centralized expansion.</p>
+            <figure>
+                <img src="https://file.echemi.com/fileManage/upload/20210610/f025690712ce4553813277561afd4f94.jpg" alt="Development tends example" width="300">
+                <figcaption><small>Development tends example</small></figcaption>
+                </figure>
+        </article>
+    </aside>
+    <section id="contact">
+        <h2>contact me</h2>
+        <a href="mailto:houqw@tlu.ee">houqw@tlu.ee
+            <br> 
+            Feel free to reach out to me:
+        </a>
+        <br>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend><strong>Contact Information</strong></legend>
+                <label for="name">Full Name:</label>
+                <input type="text" name="username" required>
+                <br>
+                <label for="email">Your Email</label>
+                <input type="email" name="user_emial" required>
+                <br>
+                <label for="phone">Tel:</label>
+                <input type="tel" name="user_tel" required>
+                <br>
+                <label>subject for their message:</label>
+                 <select name="subject">
+                 <option>general</option>
+                 <option>question</option>
+                 <option>other</option>
+                 </select>
+                    <br>
+                <label>write a message or inquiry:</label>
+                <input type="message" name="user_input">
+                <br>
+                <label>your preferred method of contact</label>
+                <input type="radio" name="contact_method" value=1> email <br>     
+                <input type="radio" name="contact_method" value=2 checked> phone <br>
+                <input type="radio" name="contact_method" value=3> either <br>
+                <label>availability:</label>
+                 <select name="availability">
+                 <option>morning</option>
+                 <option>afternoon</option>
+                 <option>evening</option>
+                 </select>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </section>
+    </main>
+<aside>
+    <h2>Skills & Tools</h2>
+    <ul>
+        <li>Market Research & Analysis</li>
+        <li>Content Creation & Copywriting</li>
+        <li>Event Planning & Coordination</li>
+        <li>UX Design & User Research</li>
+        <li>Proficient in Figma, Adobe XD, and Sketch</li>
+    </ul>    
+</aside>
+    <footer> 
+    <p><small>Copyright &copy; 2025 qianwenhou. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
