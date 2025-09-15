@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML音频与视频示例</title>
+</head>
+<body>
+    <h1>HTML音频与视频元素示例</h1>
+    
+    <h2>1. 音频元素 &lt;audio&gt;</h2>
+    <p>使用controls属性显示播放控件：</p>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        您的浏览器不支持audio元素。
+    </audio>
+    
+    <h2>2. 视频元素 &lt;video&gt;</h2>
+    <p>使用controls属性显示播放控件：</p>
+    <video controls width="400">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        您的浏览器不支持video元素。
+    </video>
+    
+    <h2>3. 带封面图片的视频</h2>
+    <p>使用poster属性添加视频封面：</p>
+    <video controls width="400" poster="https://www.w3schools.com/html/img_girl.jpg">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        您的浏览器不支持video元素。
+    </video>
+    
+    <h2>4. 音频元素属性示例</h2>
+    <p>使用autoplay和loop属性：</p>
+    <audio controls autoplay loop>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        您的浏览器不支持audio元素。
+    </audio>
+    <p><small>注意：某些浏览器可能阻止自动播放</small></p>
+    
+    <h2>5. 静音视频</h2>
+    <p>使用muted属性：</p>
+    <video controls muted width="400">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        您的浏览器不支持video元素。
+    </video>
+    
+    <h2>HTML代码结构</h2>
+    
+    <h3>音频元素代码：</h3>
+    <pre>
+&lt;audio controls&gt;
+    &lt;source src="音频文件.ogg" type="audio/ogg"&gt;
+    &lt;source src="音频文件.mp3" type="audio/mpeg"&gt;
+    您的浏览器不支持audio元素。
+&lt;/audio&gt;
+    </pre>
+    
+    <h3>视频元素代码：</h3>
+    <pre>
+&lt;video controls width="400"&gt;
+    &lt;source src="视频文件.mp4" type="video/mp4"&gt;
+    &lt;source src="视频文件.ogg" type="video/ogg"&gt;
+    您的浏览器不支持video元素。
+&lt;/video&gt;
+    </pre>
+    
+    <h2>常用属性</h2>
+    <ul>
+        <li><strong>controls</strong>：显示播放控件</li>
+        <li><strong>autoplay</strong>：自动播放（可能被浏览器阻止）</li>
+        <li><strong>loop</strong>：循环播放</li>
+        <li><strong>muted</strong>：静音播放</li>
+        <li><strong>poster</strong>：视频封面图片（仅video）</li>
+        <li><strong>width</strong>和<strong>height</strong>：设置尺寸（仅video）</li>
+    </ul>
+    
+    <h2>支持的格式</h2>
+    <p><strong>音频</strong>：MP3 (.mp3, type="audio/mpeg"), WAV (.wav, type="audio/wav"), OGG (.ogg, type="audio/ogg")</p>
+    <p><strong>视频</strong>：MP4 (.mp4, type="video/mp4"), WebM (.webm, type="video/webm"), Ogg (.ogv, type="video/ogg")</p>
+</body>
+</html>
