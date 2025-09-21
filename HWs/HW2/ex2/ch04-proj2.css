@@ -11,6 +11,7 @@ body {
    box-sizing: border-box;
    background-color: #e4e7eb;
    font-weight: 300;
+   padding: 40px;
 }
 header {
    margin-left: 20px;
@@ -24,3 +25,114 @@ h1 {
 
 /* add styles here */
 
+section{
+   width: 910px;
+   margin: 0px auto;
+   text-align: center;
+   box-shadow:  rgb(182, 182, 182) 3px 3px 6px 3px;
+}
+h1{
+   text-align: center;
+   font-weight: 600;
+   font-size: 42px;
+   padding: 20px;
+}
+h3{
+   font-size: 24px;
+   font-weight: 700;
+   padding: 20px 0px 10px 0px;
+}
+.column{
+   display: inline-block;
+   width: 300px;
+   vertical-align: top;
+   box-sizing: border-box;
+   background-color: white;
+}
+.column.featured{
+   color: white;   
+   background-color: #2f4f4f;
+}
+.column ul{
+   list-style-type: none;
+   padding: 0px;
+   margin: 0px;
+  
+}
+.price,li span{
+   font-size: 36px;
+   font-weight: 800;
+   padding: 20px 0px;
+}
+p span{  font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   font-size: 1rem;
+}
+.column:nth-of-type(1) h3+p{
+   background-color: #ec632b;
+}
+.column.featured h3+p{
+   background-color: #4b0082;
+}
+.column:nth-of-type(3) h3+p{
+   background-color: #5bb189;}   
+.column ul li:nth-of-type(2),.column ul li:nth-of-type(4) {
+background-color: rgba(47, 59, 64, 0.35);
+}
+.column a {
+   width: 90%;
+   display: inline-block;
+   margin: 20px auto;
+   padding: 10px 0px;
+   text-align: center;
+   font-weight: 400;
+   font-size: 18px;
+   text-decoration: none;
+   color: white;
+   border: 2px solid #3a6ba5;
+   background-color:  #3a6ba5;
+   border-radius: 5px;
+   box-shadow:gray 2px 2px 3px;
+}
+
+.column a:link{
+   color:white;
+}
+
+.column a:visited{
+   color:#e4e7eb;
+}
+
+.column a:hover{
+   color:blue;
+   background-color:#437cbf;}
+
+   
+#confidence{
+   width: 910px;
+   margin: 30px auto;
+   padding: 20px;
+   background-size: 24px;
+   background-color: #2f4f4f;
+   color: white;
+}
+#confidence p{
+   font-size: 14px;
+   font-weight: 100;
+   margin-bottom: 20px;
+}
+#confidence ul{
+   list-style-type: none;
+   line-height: 3;
+}
+#confidence ul li{
+   background-image: url(checkmark.svg);
+   background-repeat: no-repeat;
+   background-size: 24px;
+   background-position: 0px 8px;
+   padding-left: 40px;
+}
+#confidence a:link,a:visited{
+   color: cyan;
+   font-style: italic;
+}

@@ -14,3 +14,129 @@ body {
 }
 
 /* add styles here */
+header {
+
+   width: 100%;
+   min-height: 500px;
+   background-image: url('images/florence.jpg');
+   background-size: cover;
+}
+nav {
+   background-image: url('images/logo.png');
+   background-repeat: no-repeat;
+   background-size: 60px;
+   margin: 0px 10px 0px 10px;
+   background-position: 0px 10px;
+   height: 80px;
+}
+nav ul {
+   list-style-type: none;
+}
+nav ul li {
+   display: inline-block;
+   height: 80px;
+   margin-left: 90px;
+   padding-top: 30px;
+   font-family: 'open sans', sans-serif;
+   font-weight: 400;
+   font-size:16px;
+   color: #51279b;
+   text-transform: uppercase;
+}
+nav ul li a,
+nav ul li a:hover,
+nav ul li a:visited,
+nav ul li a:active,
+div a {
+    text-decoration: none;
+}
+
+nav ul li a {
+   color: #51279b;
+}
+
+nav ul li a:visited{
+      color: #51279b;
+}
+nav ul li a:hover,div a:hover {
+    color: #8662c7
+}
+nav ul li a:active {
+    text-decoration: none;
+}
+div h2 {
+   
+   margin: 80px 50px 20px 90px;
+   padding: auto;
+   font-family: 'open sans', sans-serif;
+   font-weight: 800;
+   font-size: 48px;
+   color: white;
+}
+nav div+p{
+   margin: 0px 50px 30px 90px;
+   padding: auto;
+   font-family: 'open sans', sans-serif;
+   font-weight: 300;
+   font-size: 24px;
+   color: white;
+}
+div a {
+   margin: 40px 50px 20px 90px;
+   padding: 10px 20px 10px 20px;
+   font-family: 'open sans', sans-serif;
+   font-weight: 300;
+   font-size: 18px;
+   color: white;
+   border: 2px solid #51279b;
+   background-color: #51279b;
+}
+main {
+   text-align: center;}
+
+.card {
+   width: 30%;
+   height: auto;
+   margin: 50px 10px 20px 10px;
+   padding: 0px 0px 10px 0px;
+   display: inline-block;   
+   vertical-align: top;
+   background-color: white;
+   text-align: left;
+   box-sizing: border-box;
+}
+section img{
+   width: 100%;
+}
+section h3 {
+   margin: 20px 20px 10px 20px;
+   padding: auto;
+   font-family: 'open sans', sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+}
+section p {
+   margin: 10px 20px 20px 20px;
+   padding: auto;
+   font-family: 'open sans', sans-serif;
+   font-weight: 200;
+   font-size: 12px;
+}
+.heart{
+ display: inline-block;
+ background-image: url('images/heart.png');
+ background-size: 16px 16px;
+ background-repeat: no-repeat;
+ background-position: left center;
+ margin: 10px 0px 0px 0px;
+ padding: 0px 0px 0px 20px;
+}
+.comment{
+ display: inline-block;
+ background-image: url('images/comment.png');
+ background-size: 16px 16px;
+ background-repeat: no-repeat;
+ background-position: left center;
+ margin: 10px 0px 0px 20px;
+ padding: 0px 0px 0px 20px;
+}
