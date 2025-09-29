@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 80px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.menu h1{
+    color: aqua;
+    padding: 10px 200px;
+
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.nav{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav-links{
+    display: flex;
+}
