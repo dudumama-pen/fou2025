@@ -6,6 +6,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     padding-top: 80px;
+    background-color: gainsboro
 }
 
 header{
@@ -13,12 +14,18 @@ header{
     position: fixed;
     top: 0;
     z-index: 1000;
+    background-color: #2c5c5d;
+    padding: 20px 0px;
+    margin-right: 30px;
 }
+
 .menu h1{
     color: aqua;
     padding: 10px 200px;
-
-
+    font-family: Gill Sans, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: italic;
 }
 .menu{
     display: flex;
@@ -30,9 +37,164 @@ header{
     padding-bottom: 10px;
     display: flex;
     justify-content: flex-end;
+    
 
+}
+nav ul {
+   list-style-type: none;
 }
 
 .nav-links{
     display: flex;
+}
+.nav ul li {
+    margin: 10px 20px;
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+}
+.banner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.banner-text{
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  margin-left: 160px;
+}
+.brands{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: gray;
+}
+.brands span{
+    flex: auto;
+    border: 0.5px solid yellow;
+    padding: 20px 40px;
+    border-right: none;
+    text-align: center;
+}
+.brandname span:last-child {
+  border-right: 0.5px solid yellow;
+}
+.ourteam{
+    display: flex;
+    height: 500px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px 80px;
+}
+.team-text h2,
+.team-text h3,
+.team-text p{
+    margin: 0px 20px;
+    padding: 0px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#buttons {
+  display: flex;
+  gap: 10px;
+}
+.learnmore-pic{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    text-align: center; 
+}
+.learnmore-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    aspect-ratio: 1 / 1;
+    object-position: right center; 
+    object-fit: cover;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px 80px;
+}
+.feature-text h2,
+.feature-text h3,
+.feature-text p {
+    margin: 0px 20px;
+    padding: 0px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.feature-text p img{
+    width: 40px;
+    height: auto;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    padding: 10px;
+}    
+
+#pic-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.features > img {
+    flex: 1; 
+    width: auto; 
+    height: 80%; 
+    max-width: 50%; 
+    aspect-ratio: auto; 
+    object-fit: contain;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-position: center;
+    border-radius: 10px;
+    background-color: lightseagreen;
+ 
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr
+}
+.walsh{
+    grid-column: 1;
+}
+.footer-links{
+    grid-column: 2;
+    grid-row: 1;
+}
+.footer-links a{
+    align-items: space-between;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-copyright{
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.footer-links, .footer-copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
