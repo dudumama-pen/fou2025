@@ -18,13 +18,6 @@
 getRandomMeal();
 */
 
-const getRandomMeal = async (keyword) => {
-     const response = await fetch(RandomMealURL);
-        const data = await response.json();
-        console.log(data.meals[0]);
-};
-
-getRandomMeal();
 
 let randomMealUrl = "https://www.themealdb.com/api/json/v1/1/random.php";
 let lookUpUrl = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
@@ -32,7 +25,6 @@ let lookUpUrl = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
 let mealsDiv = document.getElementById("meals");
 let favUl = document.querySelector(".favorites");
 
-getRandomMeal();
 
 async function getRandomMeal() {
     let response = await fetch(randomMealUrl);
@@ -101,13 +93,10 @@ async function getMealById(id) {
     return data.meals[0];
 }
 
-function addFavItem(meal) {
-    let li = document.createElement("li");
-    li.innerHTML = `
-        <img src="${meal.strMealThumb}" alt="">
-        <span>${meal.strMeal}</span>
-        <button class="clear">X</button>
-    `;
+function addMealToFav(meal) {
+    addFavId(meal.idMeal);
+    loadFavMeals();
+}
 
      let btn = li.querySelector(".clear");
     btn.addEventListener("click", function () {
@@ -115,6 +104,6 @@ function addFavItem(meal) {
         loadFavMeals(); 
     });
         favUl.appendChild(li);
-}
+
 
 loadFavMeals();
