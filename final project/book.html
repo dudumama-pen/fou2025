@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Feeder | Pro.Feeding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="book-bg">
+
+<header class="site-header">
+    <div class="logo">
+        <span class="brand-primary">Pro.</span><span class="brand-secondary">Feeding</span>
+        <img src="./images/paw-icon.png" class="logo-badge" alt="">
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html" class="active">Book a Visit</a></li>
+            <li><a href="owner-dashboard.html">I am Cat Owner</a></li>
+            <li><a href="feeder-dashboard.html">I am Feeder</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<h1 class="page-title">Book a Feeder</h1>
+
+<section class="booking-wrapper">
+
+    <form action="confirm.html" class="booking-card">
+
+        <!-- owner info -->
+        <h2 class="form-section-title">• Owner Information</h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Full name*</label>
+                <input type="text" name="ownerName" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number*</label>
+                <input type="text" name="phone" required>
+            </div>
+        </div>
+
+        <div class="form-group full">
+            <label>Address (Street, City, Postal Code)*</label>
+            <input type="text" name="address" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Email Address*</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Area Name (Optional)</label>
+                <input type="text" name="area">
+            </div>
+          </div>
+        </div> 
+
+
+        <!-- cat card -->
+        <h2 class="form-section-title">• Cat Card</h2>
+        
+     <div class="cat-card">
+
+       <div class="form-group">
+        <label for="catName">Cat's Name</label>
+        <input type="text" id="catName" placeholder="Enter cat's name" required>
+        </div>
+
+        <div class="form-group">
+        <label for="catBreed">Breed</label>
+        <input type="text" id="catBreed" placeholder="Enter breed" required>
+         </div>
+
+        <div class="form-group">
+        <label for="catAge">Age</label>
+        <input type="number" id="catAge" placeholder="Age in years" required>
+         </div>
+    </div>
+     <button type="button" class="add-cat-btn">Add Another Cat ⧁</button>
+
+
+
+
+        <!-- services -->
+        <h2 class="form-section-title">• Services Selection</h2>
+
+        <div class="services-grid">
+
+            <label class="service-option">
+                <input type="checkbox" name="service" value="10" checked>
+                Feeding & Fresh Water - €10
+            </label>
+
+            <label class="service-option">
+                <input type="checkbox" name="service" value="6" checked>
+                Litter Cleaning - €6
+            </label>
+
+            <label class="service-option">
+                <input type="checkbox" name="service" value="4">
+                Playtime & Companionship - €4
+            </label>
+
+            <label class="service-option">
+                <input type="checkbox" name="service" value="2">
+                Daily Updates (photo/video) - €2
+            </label>
+        </div>
+
+
+        <!-- access -->
+        <h2 class="form-section-title">• Access Instructions</h2>
+        <div class="form-group full">
+            <label>How can the feeder enter your home?*</label>
+            <input type="text" name="access" required>
+        </div>
+
+
+        <!-- special requirements -->
+        <h2 class="form-section-title">• Special Requests / Messages</h2>
+        <div class="form-group full">
+            <label>Special Requests / Messages</label>
+            <input type="text" name="msg">
+        </div>
+
+        <div class="total-line">
+            Grand Total : <span id="totalAmount">€16</span>
+        </div>
+
+        <div class="form-actions">
+            <button type="button" class="btn-save">Save</button>
+            <button type="submit" class="btn-submit">Submit</button>
+        </div>
+
+    </form>
+
+</section>
+
+<!--  two cats pic -->
+<img src="./images/two-cats.png" class="bottom-cats" alt="">
+
+<footer class="footer-yellow">
+    <div class="footer-logo">
+        <span class="brand-primary">Pro.</span><span class="brand-secondary">Feeding</span>
+        <img src="./images/paw-icon.png" alt="" class="logo-icon">
+    </div>
+
+    <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+
+    <p>© 2025 Pro.Feeding. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

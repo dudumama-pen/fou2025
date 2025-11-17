@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeder Dashboard | Pro.Feeding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dashboard-bg">
+
+<header class="site-header">
+    <div class="logo">
+        <span class="brand-primary">Pro.</span><span class="brand-secondary">Feeding</span>
+        <img src="./images/paw-icon.png" class="logo-badge" alt="">
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Book a Visit</a></li>
+            <li><a href="owner-dashboard.html">I am Cat Owner</a></li>
+            <li><a href="feeder-dashboard.html" class="active">I am Feeder</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1 class="page-title"><span class="role">Feeder</span> Dashboard</h1>
+<p class="dashboard-subtitle">Manage your current bookings, respond to new requests, and keep track of finished visits.</p>
+
+<section class="dashboard-wrapper">
+
+    <!-- Tabs -->
+    <div class="dashboard-tabs">
+        <button class="tab active">Upcoming Bookings</button>
+        <button class="tab">Completed Bookings</button>
+    </div>
+
+    <div class="dashboard-content">
+
+        <!-- search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+
+  <!-- SAMPLE UPCOMING BOOKING CARD -->
+        <div class="booking-card">
+
+            <div class="booking-header">
+                <div>
+                    <strong>Order Number:</strong> ORD20251020-01<br>
+                    <strong>Date & Time:</strong> 2025-10-20 10:00 AM
+                </div>
+                <div class="status-new">new booking!</div>
+            </div>
+
+            <h3 class="section-title">Owner Information</h3>
+            <p><strong>Name:</strong> Qianwen Hou</p>
+            <p><strong>Address:</strong> 330 Cat Street, Berlin</p>
+
+            <h3 class="section-title">Cat Information</h3>
+            <p><strong>Cat:</strong> Dudu</p>
+            <p><strong>Breed:</strong> Lihua Cat</p>
+
+            <h3 class="section-title">Selected Services</h3>
+            <ul>
+                <li>Feeding & Water Replacement</li>
+                <li>Litter Cleaning</li>
+            </ul>
+
+            <h3 class="section-title">Note</h3>
+            <p>“Please open the door carefully.”</p>
+
+            <p class="booking-total">Grand Total : €16</p>
+
+            <!-- actions -->
+            <div class="booking-actions">
+                <button class="btn-dark">Chat With Owner</button>
+                <button class="btn-dark">Mark As Completed</button>
+                <button class="btn-dark">Cancel Booking</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer-yellow">
+    <div class="footer-logo">
+        <span class="brand-primary">Pro.</span><span class="brand-secondary">Feeding</span>
+        <img src="./images/paw-icon.png" alt="" class="logo-icon">
+    </div>
+
+    <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+
+    <p>© 2025 Pro.Feeding. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
