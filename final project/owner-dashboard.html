@@ -7,90 +7,77 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="dashboard-bg">
+<body class="owner-bg">
 
 <header class="site-header">
     <div class="logo">
         <span class="brand-primary">Pro.</span><span class="brand-secondary">Feeding</span>
         <img src="./images/paw-icon.png" class="logo-badge" alt="">
     </div>
-
     <nav class="main-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="book.html">Book a Visit</a></li>
-            <li><a href="owner-dashboard.html" class="active">I am Cat Owner</a></li>
+            <li><a class="active" href="owner-dashboard.html">I am Cat Owner</a></li>
             <li><a href="feeder-dashboard.html">I am Feeder</a></li>
         </ul>
     </nav>
 </header>
 
-<h1 class="page-title"><span class="role">Cat Owner</span> Dashboard</h1>
-<p class="dashboard-subtitle">Manage your bookings and stay connected with your feeder.</p>
-
-<section class="dashboard-wrapper">
-
-    <!-- Tabs -->
-    <div class="dashboard-tabs">
-        <button class="tab active">Upcoming Bookings</button>
-        <button class="tab">Past Bookings</button>
-    </div>
-
-    <div class="dashboard-content">
-
-    <!-- SEARCH -->
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-        </div>
-
-        <!-- BOOKING CARD -->
-        <div class="booking-card">
-
-            <p><strong>Order Number:</strong> ORD20250922-17</p>
-            <p><strong>Date & Time:</strong> Sept 22, 2025 – 5:00 PM</p>
-
-            <p><strong>Services:</strong> Feeding & Water Replacement</p>
-            <p><strong>Feeder:</strong> Kerri Green</p>
-            <p><strong>Status:</strong> Completed</p>
-
-            <div class="booking-actions">
-                <button class="btn-dark">Leave A Review</button>
-                <button class="btn-dark">More Details</button>
-            </div>
-        </div>
-
-        <!-- second card -->
-        <div class="booking-card">
-            <p><strong>Order Number:</strong> ORD20250901-03</p>
-            <p><strong>Date & Time:</strong> Sept 1, 2025 – 2:00 PM</p>
-
-            <p><strong>Services:</strong> Feeding & Water Replacement, Litter Cleaning</p>
-            <p><strong>Feeder:</strong> Kerri Green</p>
-            <p><strong>Status:</strong> Completed</p>
-
-            <div class="booking-actions">
-                <button class="btn-dark">Leave A Review</button>
-                <button class="btn-dark">More Details</button>
-            </div>
-        </div>
-
-    </div>
-
+<section class="owner-header">
+    <h1 class="owner-title"><span class="yellow">Cat Owner</span> Dashboard</h1>
+    <p class="owner-subtitle">Manage your bookings and stay connected with your feeder.</p>
 </section>
 
-<footer class="footer-yellow">
+<section class="owner-wrapper">
+
+    <!-- Tabs -->
+    <div class="owner-tabs">
+        <button class="owner-tab owner-tab-active">Upcoming Bookings</button>
+        <button class="owner-tab">Past Bookings</button>
+    </div>
+
+   
+    <div class="owner-panel">
+
+        <!-- Search -->
+        <div class="owner-search">
+            <input type="text" placeholder="Search">
+            <img src="./images/search.png" alt="">
+        </div>
+
+        <!-- Booking Card -->
+        <div class="owner-booking-card">
+            <div class="owner-booking-info">
+                <p><strong>Order Number:</strong> ORD20250922-17</p>
+                <p><strong>Date & Time:</strong> Sept 22, 2025 – 5:00 PM</p>
+                <p><strong>Services:</strong> Feeding & Water Replacement</p>
+                <p><strong>Feeder:</strong> Kerri Green</p>
+                <p><strong>Status:</strong> Completed</p>
+            </div>
+
+            <div class="owner-booking-actions">
+                <button class="owner-btn">Leave A Review</button>
+                <button class="owner-btn-outline">More Details</button>
+            </div>
+        </div>
+
+        <!-- More  -->
+        <div class="owner-empty">
+            <a href="book.html" class="owner-book-btn">Book A Visit Now</a>
+        </div>
+
+    </div>
+</section>
+
+<footer class="yellow-footer">
     <div class="footer-logo">
         <span class="brand-primary">Pro.</span><span class="brand-secondary">Feeding</span>
-        <img src="./images/paw-icon.png" alt="" class="logo-icon">
+        <img src="./images/footer-icon.png" class="logo-icon">
     </div>
-
     <div class="footer-links">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a>About</a><a>Contact</a><a>Privacy Policy</a><a>Terms of Service</a>
     </div>
-
     <p>© 2025 Pro.Feeding. All rights reserved.</p>
 </footer>
 
