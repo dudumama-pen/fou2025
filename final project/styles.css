@@ -1,6 +1,8 @@
 /* 
-   GLOBAL STYLES
+   OVERSALL 
 */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +10,11 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333;
   line-height: 1.6;
 }
+
 .homepage{
   background: #F6F6F6;
 }
@@ -26,6 +29,12 @@ img {
   max-width: 1180px;
   margin: auto;
 }
+.hero-title {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
 
 /* 
    HEADER & NAVIGATION
@@ -52,6 +61,8 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-family: "Baloo 2", cursive;
+
 }
 .main-nav {
   margin-right: 20px;
@@ -84,6 +95,12 @@ img {
 }
 
 /* --------------------------------- HERO SECTION--------------------------------- */
+
+.hero-title {
+  font-family: "Poppins", sans-serif;
+}
+
+
 .hero {
   display: flex;
   padding: 60px 5% 40px 5%;
@@ -477,6 +494,8 @@ footer {
   align-items: center;
   gap: 8px;
   margin-bottom: 25px;
+    font-family: "Baloo 2", cursive;
+
 }
 
 .footer-logo .brand-primary {
@@ -861,6 +880,8 @@ book-form select {
 
 .black-footer-logo {
     font-size: 24px;
+      font-family: "Baloo 2", cursive;
+
     font-weight: 800;
     display: flex;
     justify-content: center;
@@ -1054,7 +1075,7 @@ body.confirm-bg {
 .owner-panel,
 .feeder-panel {
   border: 3px solid #000;
-  border-radius: 0 0 40px 40px;
+  border-radius: 15px 15px 40px 40px;
   padding: 40px;
   background: #fafafa;
   position: relative;
@@ -1218,5 +1239,236 @@ body.confirm-bg {
 
 
 
-
 /* ---------------- RESPONSIVE=------------------------------ */
+
+@media (max-width: 900px) {
+
+  .hero {
+      flex-direction: column;
+      padding-top: 120px;   
+      text-align: center;
+  }
+  .hero-left,
+  .hero-right {
+      width: 100%;
+  }
+
+  .hero-title {
+      font-size: 38px;
+  }
+  .about-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+.services-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px 10px; 
+  }
+
+  .service-card {
+    padding: 10px 5px;
+  }
+
+.services {
+  padding: 20px 5%;
+}
+.how-it-works {
+  padding: 20px 5%;
+
+}
+  .steps-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonial {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .testimonial-img-wrapper {
+      width: 0%;
+      justify-content: center;
+  }
+
+  .testimonial-content {
+      width: 100%;
+  }
+
+
+  .book-form-row {
+      flex-direction: column;
+      gap: 16px;
+  }
+
+  .book-cat-card {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .book-services-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .owner-tabs,
+  .feeder-tabs {
+      flex-wrap: wrap;
+      gap: 12px;
+  }
+
+  .owner-tab,
+  .feeder-tab {
+      width: 48%;
+      padding: 12px 0;
+      text-align: center;
+  }
+
+  .feeder-booking-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .owner-search,
+  .feeder-search {
+      margin-left: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+    
+  .site-header {
+      padding: 8px 16px;
+      gap: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .logo {
+      font-size: 20px;
+      margin-left: 0;
+  }
+
+  .title-paw,.logo-badge {
+      width: 18px;
+  }
+
+  .main-nav ul {
+      gap: 14px;
+  }
+
+  .main-nav a {
+      font-size: 14px;
+  }
+
+
+    body.book-bg,.confirm-bg,.owner-bg,.feeder-bg {
+    background-image: none !important;
+    padding-top: 0 !important;
+  }
+  .hero {
+      padding: 0px 5% 10px 5%;
+  }
+   .about-img {
+    display: none;
+  }
+  h3 {
+  font-size: 24px !important;
+  line-height: 1.3;
+}
+.section-title {
+  
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+  .confirm-site-header,.site-header {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+      position: relative;
+  }
+
+  .hero-title {
+      font-size: 32px;
+      line-height: 1.2;
+  }
+
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+      grid-template-columns: 1fr;
+  }
+  .services-grid {
+  margin-top: 10px;
+  
+}
+
+  .testimonial-controls {
+      justify-content: center;
+  }
+.thumbs {
+  margin-left: -30px;   /* 改那个小图用的 */
+}
+  .avatar {
+      width: 70px;
+      height: 70px;
+  }
+
+  confirm-form-group{
+    width: 40%;
+  }
+
+
+  .booking-card {
+      padding: 30px 25px;
+  }
+
+  .book-cat-card {
+      grid-template-columns: 1fr;
+  }
+
+  .book-services-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .book-total-line {
+      font-size: 20px;
+  }
+
+  .confirm-card {
+      padding: 30px 25px;
+  }
+
+  .confirm-title {
+      font-size: 34px;
+  }
+  .success-card {
+      padding: 40px 20px;
+  }
+
+  .success-cat-img {
+      width: 40%;
+  }
+  .owner-tab,
+  .feeder-tab {
+      width: 47%;
+  }
+  .owner-booking-card {
+      flex-direction: column;
+      gap: 15px;
+  }
+  .owner-booking-actions {
+      flex-direction: row;
+      justify-content: center;
+  }
+  .feeder-actions {
+      flex-direction: column;
+  }
+}
