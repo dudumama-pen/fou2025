@@ -1236,7 +1236,182 @@ body.confirm-bg {
     color: #fff;
 }
 
+/*-------- login---------------*/
+    body.login-bg {
+      background-color: #FFF6C8;
+      padding-top: 140px;
+    }
 
+    .login-wrapper {
+      width: 90%;
+      max-width: 850px;
+      margin: 0 auto 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-card {
+      background: #fff;
+      border: 4px solid #000;
+      border-radius: 26px;
+      padding: 50px 60px;
+      text-align: center;
+      box-shadow: 8px 10px 0 #e0d7a5;
+      width: 100%;
+    }
+
+    .login-card h2 {
+      font-size: 36px;
+      font-weight: 900;
+      color: #000;
+      margin-bottom: 10px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .login-sub {
+      font-size: 16px;
+      opacity: 0.7;
+      margin-bottom: 25px;
+    }
+
+    .login-form-group {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .login-form-group label {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .login-form-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 14px;
+      border: 3px solid #000;
+      background: #fff;
+      font-size: 15px;
+    }
+
+    .login-btn {
+      width: 180px;
+      padding: 12px 0;
+      background: #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.2s;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 0 #444;
+    }
+
+    .login-switch {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .login-switch a {
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
+
+        body.signup-bg {
+      background-color: #FFF6C8;
+      padding-top: 140px;
+    }
+
+    .signup-wrapper {
+      width: 90%;
+      max-width: 850px;
+      margin: 0 auto 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .signup-card {
+      background: #fff;
+      border: 4px solid #000;
+      border-radius: 26px;
+      padding: 50px 60px;
+      text-align: center;
+      box-shadow: 8px 10px 0 #e0d7a5;
+      width: 100%;
+    }
+
+    .signup-card h2 {
+      font-size: 36px;
+      font-weight: 900;
+      color: #000;
+      margin-bottom: 10px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .signup-sub {
+      font-size: 16px;
+      opacity: 0.7;
+      margin-bottom: 25px;
+    }
+
+    .signup-form-group {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .signup-form-group label {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .signup-form-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 14px;
+      border: 3px solid #000;
+      background: #fff;
+      font-size: 15px;
+    }
+
+    .signup-btn {
+      width: 180px;
+      padding: 12px 0;
+      background: #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.2s;
+    }
+
+    .signup-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 0 #444;
+    }
+
+    .signup-switch {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .signup-switch a {
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
 
 
 /* ---------------- RESPONSIVE=------------------------------ */
@@ -1335,8 +1510,30 @@ body.confirm-bg {
   .feeder-search {
       margin-left: 0;
   }
+  body.login-bg,
+  body.signup-bg {
+    padding-top: 110px; 
+  }
 
+  .login-card,
+  .signup-card {
+    padding: 40px 45px;
+    max-width: 600px;
+  }
+
+  .login-card h2,
+  .signup-card h2 {
+    font-size: 32px;
+  }
+
+  .login-sub,
+  .signup-sub {
+    font-size: 15px;
+  }
 }
+
+
+
 
 @media (max-width: 600px) {
     
@@ -1366,7 +1563,7 @@ body.confirm-bg {
   }
 
 
-    body.book-bg,.confirm-bg,.owner-bg,.feeder-bg {
+    body.book-bg,.confirm-bg,.owner-bg,.feeder-bg,.login-bg,.signup-bg {
     background-image: none !important;
     padding-top: 0 !important;
   }
@@ -1424,6 +1621,14 @@ body.confirm-bg {
   confirm-form-group{
     width: 40%;
   }
+  .confirm-form-row {
+      flex-direction: column ;
+      gap: 12px ;
+  }
+  .confirm-form-group input {
+      width: 100% ; 
+  }
+
 
 
   .booking-card {
@@ -1470,5 +1675,63 @@ body.confirm-bg {
   }
   .feeder-actions {
       flex-direction: column;
+  }
+  body.login-bg,
+  body.signup-bg {
+    padding-top: 20px !important; 
+    background-color: #FFF6C8 !important;
+  }
+
+
+
+  /* The Card */
+  .login-card,
+  .signup-card {
+    padding: 28px 22px;
+    border: 4px solid #000;
+    border-radius: 22px;
+    box-shadow: 6px 7px 0 #d8c98a; 
+  }
+
+  /* Title */
+  .login-card h2,
+  .signup-card h2 {
+    font-size: 28px;   
+    margin-bottom: 8px;
+  }
+
+  .login-sub,
+  .signup-sub {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  /* Form label + input */
+  .login-form-group label,
+  .signup-form-group label {
+    font-size: 13px;
+  }
+
+  .login-form-group input,
+  .signup-form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Button */
+  .login-btn,
+  .signup-btn {
+    width: 150px;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 999px;
+  }
+
+  /* Switch link “Already have an account?” */
+  .login-switch,
+  .signup-switch {
+    font-size: 12px;
+    margin-top: 12px;
   }
 }
